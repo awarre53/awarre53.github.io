@@ -1,0 +1,39 @@
+body {
+    background-color: #4287f5;
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+
+a {
+    color: #42f5ec;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ad42f5;
+}
+
+main {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+img {
+    width: 65%;
+    height: 65%;
+}
+
+ul {
+    text-align: left;
+}
+
+#contract p {
+    text-align: left;
+}
+
+footer img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
