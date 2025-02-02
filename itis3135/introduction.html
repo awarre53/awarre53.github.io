@@ -32,7 +32,7 @@
                 <li><strong>Academic Background: </strong>I am a Junior majoring in computer science with a concentration in Cybersecurity. Originally from NCSU.</li>
                 <li><strong>Background in this Subject: </strong>In elementary school I created my first website in HTML at an IBM after school program.</li>
                 <li><strong>Primary Computer Platform: </strong>MacOS</li>
-                <li><strong>Courses I'm Taking & Why: </strong>
+                <li><strong>Courses I'm Taking &amp; Why: </strong>
                     <ul>
                         <li><strong>ITIS3135 - Web-based application design and development: </strong>A required class but something I am very interested in since I haven't used HTML in over 10 years.</li>
                         <li><strong>BIO1110 - Principles of Biology: </strong> A class for a science general education requirement. I am interested in how to keep my body healthy.</li>
@@ -65,9 +65,10 @@
             </a>         
             
         </footer>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                 document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>  
     </body>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>     
+       
 </html>
