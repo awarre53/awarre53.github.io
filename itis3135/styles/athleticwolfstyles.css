@@ -1,0 +1,40 @@
+body {
+    background-color: #8E9394;
+    color: white;
+    font-family: Verdana;
+}
+header, footer {
+    text-align: center;
+}
+main {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h2 {
+    text-align: center;
+}
+main p {
+    text-align: left;
+    margin-left: 4%;
+   
+}
+main li {
+    margin-left: 5%;
+}
+
+a {
+    color: #121010;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a20909;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    height: 45%;
+    width: 50%;
+}
