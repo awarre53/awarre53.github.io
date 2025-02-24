@@ -3,6 +3,9 @@ body {
     text-align: center;
     color: white;
     font-family: Verdana;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 95%;
 }
 
 a {
@@ -15,8 +18,8 @@ a:hover {
 }
 
 main {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 img {
