@@ -17,48 +17,94 @@
             font-family: Verdana;
         }
         a {
-            color: #42f5ec;
-            text-decoration: none;
+            color: #5e2d86;
+            text-decoration: underline;
         }
         a:hover {
-            color: #ad42f5;
+            color: #fb8500;
         }
 
         ul { 
-            list-style-type: "☆ ";
+            list-style-type: "• ";
             
         }
         footer {
             text-align: center;
         }
         header {
+            text-align: center;
+            font-family: Verdana;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 95%;
             align-items: center;
             gap: 20px;
-        } 
+        }
         main {
             margin-left: 2%;
             margin-right: 2%;
         } 
+        figure {
+            margin: auto;
+            align-content: center;
+        }
+        
+        /* CSS Update: */
+        /* Foundational Three */
+        main, .maincontainer {
+            width: 95%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        /* Rule Overrides For Laptops / Small Screens */
+        @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+            body {
+                font-size: 18px; 
+            }
+        }
+        /* Rule Overrides For Tablet Devices */
+        @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+            body {
+                font-size: 16px; 
+            }
+        }
+        /* Rule Overrides For Mobile Devices */
+        @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+            body {
+                font-size: 14px; 
+            }
+        }
+
+        /** Styles below to help hide sections**/
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        #home {
+            display: block;
+        }
         
     </style>
 </head>
 <body>
     <header>
         <h1>Swimming</h1>
-        <h2>A sport bla bla bla</h2>
+        <h2>Stronger with Every Stroke</h2>
         <nav> 
-            <a href="#home">Home</a>🏊‍♂️
-            <a href="#about">About Me</a>🏊‍♂️
-            <a href="#when">When to Swim?</a>🏊‍♂️ 
-            <a href="#where">Best Locations</a>🏊‍♂️
-            <a href="#how">How to Start?</a>🏊‍♂️
-            <a href="#why">Why Swim?</a>🏊‍♂️
-            <a href="#ai">AI Prompts</a>
+            <a href="javascript:void(0)" onclick="showSection('home')">Home</a> 🏊‍♂️
+            <a href="javascript:void(0)" onclick="showSection('about')">About Me</a> 🏊‍♂️
+            <a href="javascript:void(0)" onclick="showSection('when')">When to Swim?</a> 🏊‍♂️ 
+            <a href="javascript:void(0)" onclick="showSection('where')">Best Locations</a> 🏊‍♂️
+            <a href="javascript:void(0)" onclick="showSection('how')">How to Start?</a> 🏊‍♂️
+            <a href="javascript:void(0)" onclick="showSection('why')">Why Swim?</a> 🏊‍♂️
+            <a href="javascript:void(0)" onclick="showSection('ai')">AI Prompts</a>
         </nav>
     </header>
     <main>
         <section id="home">
             <h2>Home</h2>
+            <h3>What is Swimming:</h3>
             <p>Swimming is a sport that has been around since 2500 BC, in which your goal is to increase your 
             speed in different strokes, over a long or short distance. There are four strokes in which swimmers
             compete in at swim meets: freestyle, backstroke, breaststroke, and butterfly. Swimmers can also compete
@@ -67,7 +113,7 @@
             of 28, 23 of them gold!
             </p>
             <figure>
-                <img src="images/home.JPG" alt="Swimming Race">
+                <img src="images/home.jpg" alt="Swimming Race">
                 <figcaption><i>Securing 1st in a medley relay</i></figcaption>
             </figure>
             <h3>The Four Strokes:</h3>
@@ -101,7 +147,7 @@
             races I would swim 6-7 times per week and also complete strength training outside of the water.
             </p>
             <figure>
-                <img src="images/About.JPG" alt="Breastroke Race">
+                <img src="images/about.jpg" alt="Breastroke Race">
                 <figcaption><i>Swimming breastroke at a swim meet</i></figcaption>
             </figure>
             <h3>Why I Love Swimming:</h3>
@@ -124,7 +170,7 @@
             pools often have restrictions for swimming as pools can get crowded with families on a hot summer day.
             </p>
             <figure>
-                <img src="images/when.JPG" alt="Outdoor Pool">
+                <img src="images/when.jpg" alt="Outdoor Pool">
                 <figcaption><i>Preparing for swim meet at an outdoor pool</i></figcaption>
             </figure>
             <h3>Indoor:</h3>
@@ -140,21 +186,128 @@
 
         <section id="where">
             <h2>Best Locations</h2>
-            <h3>Indoor vs Outdoor?</h3>
-            <p>Swimming can be done year round using indoor pools or outdoor pools.</p>
+            <h3>General Information on Where to Swim:</h3>
+            <p>The best swimming locations depend on your preference—whether you enjoy lap swimming in a pool,
+             open-water swimming in lakes, or natural swimming spots with scenic views. Lap swimming is an 
+             excellent way to maintain fitness, offering cardiovascular benefits and full-body conditioning. 
+             When seeking facilities for lap swimming, it's important to consider factors such as pool length 
+             (preferably 25 yards or 50 meters), dedicated lap swim times, water temperature, cleanliness, 
+             and availability of amenities like locker rooms and parking.</p>
             <figure>
-                <img src="images/About.JPG" alt="Swimming Race">
-                <figcaption><i>Swimming breastroke at a swim meet</i></figcaption>
+                <img src="images/where.JPG" alt="Swimming"  width="580" height="387">
+                <figcaption><i>Hopping into the water before a race</i></figcaption>
             </figure>
-            <h3>My Recommendation:</h3>
-            <ul></ul>
+            <h3>Top Locations in the Charlotte Area:</h3>
+            <ul>
+                <li>Mecklenburg County Aquatic Center: World-class facility with a 50-meter pool, 
+                diving well, and fitness amenities.
+                </li>
+                <li>University City YMCA: Offers a lap pool with dedicated swim hours.
+                </li>
+                <li>Life Time Fitness (University): Provides both indoor and outdoor lap pools 
+                with additional fitness amenities.
+                </li>
+                <li>Keith Family YMCA: Located on Mallard Creek Rd, 
+                features a large outdoor pool for lap swimming.
+                </li>
+                <li>Eastway Regional Recreation Center: A bit farther but offers a modern facility with 
+                lap swimming lanes.
+                </li>
+            </ul>
         </section>
         
+        <section id="how">
+            <h2>How to Start Swimming</h2>
+            <h3>Jump Into the Water:</h3>
+            <p>The best way to get involved in the sport of swimming is to simply start. Jump into the water,
+            start by swimming laps and improve from there. Everybody starts at a different fitness level, some
+            people naturally can swim more laps at a faster pace, but it dosen't matter where you start as long
+            as you are able to consistently train. If you are struggling to get going you might need assistance 
+            from a swim coach. Lessons are available all over and this can help jumpstart your progress. Online 
+            resources are also available to help guide your technique on different strokes and can offer training 
+            programs.
+            </p>
+            <figure>
+                <img src="images/how.JPG" alt="Race Prep"  width="580" height="387">
+                <figcaption><i>Getting ready to swim a relay with a teamate</i></figcaption>
+            </figure>
+            <h3>You Don't Need to Swim Alone:</h3>
+            <p>Starting off into the world of swimming can be hard, but there is a big swimming community out 
+            there to explore. Joining lessons at your local facility can help improve your morale on swimming
+            as working out with your peers can be more fun and engaging. There are also local swim teams you can 
+            join, some catering to begginners and some catering to more competitive swimmers. It is completely fine 
+            to swim on your own, but I would highly reccomend to try swimming with others, especially if you are 
+            new to the sport and can get some helpful guidance.
+            </p>
+        </section>
+
+        <section id="why">
+            <h2>Why Swim?</h2>
+            <h3>Love for the Water:</h3>
+            <p>Swimming is a great sport that can be for fun or on a more competitive level. Either way, it
+            provides vast health benefits and a great way to exercise. Adding just one day of swimming per week 
+            could build a lot of strength and muscle tone as swimming works your whole body. Swimming laps can also 
+            burn fat and reduce stress. When I started swimming I absolutely despised it, but as I persisted throughout 
+            the struggle I gained an everloving passion for this sport. All I ask is for you to try it, 
+            swimming is such a rewarding sport. Seeing yourself get faster at swimming and your times dropping
+            is an amazing feeling. 
+            </p>
+            <figure>
+                <img src="images/why.JPG" alt="teamates"  width="580" height="387">
+                <figcaption><i>Hanging out with teamates</i></figcaption>
+            </figure>
+            <h3>Benifits: </h3>
+            <ul>
+                <li>Full-Body Workout: 
+                Engages almost every muscle group, improving strength and endurance.
+                </li>
+                <li>Cardiovascular Health: Enhances heart and lung function, reducing the risk of heart disease
+                </li>
+                <li>Builds Endurance: Improves stamina and overall fitness levels over time.
+                </li>
+                <li>Burns Calories: Effective for weight management, burning significant calories per session.
+                </li>
+                <li>Boosts Mood: Releases endorphins that help reduce anxiety and depression.
+                </li>
+                <li>Enhances Lung Capacity: Increases oxygen efficiency through breath control.
+                </li>
+                <li>Life-Saving Skill: Learning to swim can prevent drowning and increase water safety awareness.
+                </li>
+            </ul>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <h3>ChatGPT:</h3>
+            <ul>
+                <li>#1: Can you write a short description for each of the four strokes?</li>
+                <li>#2: Can you write some general information on best locations to swim in your local area. 
+                Then can you write a list of best locations to swim near the Charlotte area? 
+                </li>
+                <li>#3: Using css and/or JS how can I hide all sections except the one you have clicked 
+                (first section displayed for the user is the home page). I have the sections "home", "about"
+                 "when", 'where", "how", "why", and "ai".
+                </li>
+                <li>#4: How can I only show home when I first load the page?</li>
+            </ul>
+        </section>
+    
+        <script>
+            function showSection(sectionId) {
+                document.querySelectorAll("section").forEach((section) => {
+                    section.style.display = "none";
+                });
+    
+                document.getElementById(sectionId).style.display = "block";
+            }
+        </script>
 
     </main>
     <footer>
-        <p>Warren Industries &copy;2025</p>
-        <p>"Innovating our Future"</p>   
+        <p>Page built by <a href="warrenindustries.com/index.html"  target="_blank">Warren Industries </a>&copy;2025 | 
+        <i>Certified in <a href="https://www.freecodecamp.org/certification/AustinWarrenUNCC/responsive-web-design"  
+         target="_blank">Responsive Web Design</a></i>
+        </p> 
     </footer>
 </body>
 </html>
