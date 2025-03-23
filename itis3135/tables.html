@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Austin Warren's Athletic Wolf † ITIS3135 Tables</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div data-include="components/header.html"></div>  
+        
+        <main>
+            <h2>HTML Tables</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Rob Warren, rwarren22@athleticwolf.com, $200,000, 22 years</li>
+                <li>Summer Warren, sumwarr@gmail.com, $50,000, 2 years</li>
+                <li>Virginia Dallin, vdall@athleticwolf.com, $100,000, 38 years</li>
+                <li>Will Hambrick, williamh@yahoo.com, $150,000, 5 years</li>
+                <li>Joey Forgione, jforg15@gmail.com, $115,000, 1 year</li>
+                <li>Jackson Wilson, willersonj@athleticwolf.com, $80,000, 4 years</li>
+                <li>Gavin Wells, gdubz@gmail.com, $120,000, 6 years</li>
+            </ol>
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>Rob Warren</td>
+                    <td>rwarren22@athleticwolf.com</td>
+                    <td>$200,000</td>
+                </tr>
+                <tr>
+                    <td>Summer Warren</td>
+                    <td>sumwarr@gmail.com</td>
+                    <td>$50,000</td>
+                </tr>
+                <tr>
+                    <td>Virginia Dallin</td>
+                    <td>vdall@athleticwolf.com</td>
+                    <td>$100,000</td>
+                </tr>
+                <tr>
+                    <td>Will Hambrick</td>
+                    <td>williamh@yahoo.com</td>
+                    <td>$150,000</td>
+                </tr>
+                <tr>
+                    <td>Joey Forgione</td>
+                    <td>jforg15@gmail.com</td>
+                    <td>$115,000</td>
+                </tr>
+                <tr>
+                    <td>Jackson Wilson</td>
+                    <td>willersonj@athleticwolf.com</td>
+                    <td>$80,000</td>
+                </tr>
+                <tr>
+                    <td>Gavin Wells</td>
+                    <td>gdubz@gmail.com</td>
+                    <td>$120,000</td>
+                </tr>
+            </table>
+            <!--Second Table-->
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <table>
+                    <tr>
+                        <th>Job</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                        <th>Years of Service</th>
+                    </tr>
+                    <tr>
+                        <td>CEO</td>
+                        <td>Rob Warren</td>
+                        <td>rwarren22@athleticwolf.com</td>
+                        <td>$200,000</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Receptionist</td>
+                        <td>Summer Warren</td>
+                        <td>sumwarr@gmail.com</td>
+                        <td>$50,000</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Service</td>
+                        <td>Virginia Dallin</td>
+                        <td>vdall@athleticwolf.com</td>
+                        <td>$100,000</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Marketing</td>
+                        <td>Will Hambrick</td>
+                        <td>williamh@yahoo.com</td>
+                        <td>$150,000</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Joey Forgione</td>
+                        <td>jforg15@gmail.com</td>
+                        <td>$115,000</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" id="sales">Sales</td>
+                        <td>Jackson Wilson</td>
+                        <td>willersonj@athleticwolf.com</td>
+                        <td>$80,000</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Gavin Wells</td>
+                        <td>gdubz@gmail.com</td>
+                        <td>$120,000</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Total Annual Salary and Years of Service</th>
+                        <th>$815,000</th>
+                        <th>78</th>
+                    </tr>
+                </table>
+                <figcaption><i>Employee Information</i></figcaption>
+            </figure>
+        </main>
+
+        <!--Footer-->
+        <div data-include="components/footer.html"></div>
+          
+    <script src="scripts/HTMLInclude.min.js"></script>     
+    </body>    
+</html>

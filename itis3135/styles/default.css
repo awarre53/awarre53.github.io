@@ -66,3 +66,29 @@ main, .maincontainer {
         font-size: 14px; 
     }
 }
+table, th, td {
+    border: 1px solid;
+    align-items: center;
+    margin: auto;
+}
+th, td {
+    padding: 5px;
+}
+table th {
+    background-color: #023047;
+}
+table tr:nth-child(odd) {
+    background-color: #025781;
+}
+table tr:nth-child(even) {
+    background-color: #67c6f6;
+}
+table tr #sales {
+    background-color: #67c6f6;
+}
+ol {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
