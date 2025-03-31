@@ -31,7 +31,7 @@ ul {
     text-align: left;
 }
 
-#contract p {
+main p {
     text-align: left;
 }
 
@@ -91,4 +91,13 @@ ol {
     text-align: left;
     margin-left: 15%;
     margin-right: 15%;
+}
+h3 {
+    text-align: left;
+}
+.home p {
+    text-align: center;
+}
+.project figure {
+    float: left;
 }
