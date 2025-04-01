@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Austin Warren's Athletic Wolf † ITIS3135 BYO - Introduction Page Form</title>
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Header-->
+        <div data-include="components/header.html"></div>  
+        
+        <main>
+            <div id="byo-form">
+                <h2>BYO - Introduction Page Form</h2>
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="First Name Last Name" value="Austin Warren" required>
+            
+                    <label for="mascot">Mascot:</label>
+                    <input type="text" id="mascot" placeholder="First Initial Adjective  Last Name Animal" value="Athletic Wolf" required>
+                    <div id="img-div">
+                        <label for="image">Image:</label>
+                        <input type="file" accept="image/jpg, image/jpeg, image/png" id="image" required>
+                    </div>
+                    <label for="caption">Image Caption:</label>
+                    <input type="text" id="caption" placeholder="Caption your Image" value="Riding a horse in Nicaragua" required>
+            
+                    <label for="personal" >Personal Background:</label>
+                    <input type="text" id="personal" placeholder="Tell us about yourself!" 
+                    value="I'm from Raleigh NC, transferred over from NC State University. I am pursuing a degree in Cybersecurity." required>
+            
+                    <label for="professional">Professional Background: </label>
+                    <input type="text" id="professional" placeholder="List your work experience" 
+                    value="I have worked for Lowes Foods as a cashier and AMG (Aquatic Management Group) as a Lifeguard." required>
+            
+                    <label for="academic">Academic Background:</label>
+                    <input type="text" id="academic" placeholder="List your academic experience" 
+                    value="I am a Junior majoring in computer science with a concentration in Cybersecurity. Originally from NCSU." required>
+            
+                    <label for="web-development">Background in Web Development:</label>
+                    <input type="text" id="web-development" placeholder="Web Development projects" 
+                    value="In elementary school I created my first website in HTML at an IBM after school program." required>
+            
+                    <label for="platform">Primary Computer Platform:</label>
+                    <input type="text" id="platform" placeholder="macOS,Windows,Linux,etc" value="MacOS" required>
+                    
+                    <!---->
+                    <label>Courses Taking:</label>
+                    <div id="courses-taking">
+                        <input type="text" 
+                        value="ITIS3135 - Web-based application design and development: A required class but something I am very interested in since I haven't used HTML in over 10 years." required>
+                        <button id="remove1" type="button">Remove</button>
+                    
+                        <input type="text"
+                        value="BIO1110 - Principles of Biology: A class for a science general education requirement. I am interested in how to keep my body healthy." required>
+                        <button id="remove2" type="button">Remove</button>
+                    
+                        <input type="text"
+                        value="CTCM2530 - Critical Thinking (History of Baseball): I decided to take a class about baseball (one of my favorite sports to watch) as my critical thinking requirement." required>
+                        <button id="remove3" type="button">Remove</button>
+                    
+                        <input type="text" 
+                        value="ITIS3200 - Intro to Security and Privacy: A requirement for my concentration in Cybersecurity, I will start to learn more about how to protect computer data." required>
+                        <button id="remove4" type="button">Remove</button>
+
+                        <input type="text" 
+                        value="LTAM1502 - Introduction to Latin American History and Culture: Another general education course, I decided to take this because I have only learned about US history and wanted to learn more about Latin America." required>
+                        <button id="remove5" type="button">Remove</button>
+                    </div>
+                    <button id="add" type="button">Add a Class</button>
+                    <!---->
+                    <div id="funny-div">
+                        <label for="funny">Funny Thing:</label>
+                        <input type="text" id="funny" placeholder="A funny story" 
+                        value="At my peak I was able to do 25 pull ups in a row." required>
+                    </div>
+                    <label for="anything">Anything Else:</label>
+                    <input type="text" id="anything" placeholder="Anything" 
+                    value="I have recently started playing a lot of pickleball" required>
+                    
+                    <p>"I understand that what is on this page is not password protected and I will not put 
+                        anything here that I don't want publicly available."
+                    </p>
+                    <label>
+                        <input type="checkbox" id="agreement" checked>
+                        <span class="checkmark"></span> I agree to the terms
+                    </label>
+                    <input id="submit" type="submit" value="Submit">
+                    <input id="reset" type="reset" value="Reset">
+                </form>
+            </div>
+            <div id="output"></div>
+        </main>
+
+        <!--Footer-->
+        <div data-include="components/footer.html"></div>
+    <script src="scripts/survey.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>     
+    </body>    
+</html>
