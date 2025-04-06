@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+    <link rel="stylesheet" href="../styles/projectstyles.css">
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Learn JavaScript</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">Learn HTML</a></li>
+                <li><a href="css.html">Learn CSS</a></li>
+                <li><a href="javascript.html" class="active">Learn JavaScript</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="introduction">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a scripting language used to create and control dynamic website content. It allows you to make your website interactive and responsive to user actions.</p>
+        </section>
+
+        <section class="js-syntax">
+            <h3>Basic JavaScript Syntax</h3>
+            <p>JavaScript code is written inside <code>&lt;script&gt;</code> tags or in separate <code>.js</code> files. Here's a basic example:</p>
+            <pre><code>let message = "Hello, world!";
+alert(message);</code></pre>
+        </section>
+
+        <section class="variables">
+            <h3>Variables in JavaScript</h3>
+            <p>Variables store data values. You can declare them using <code>let</code>, <code>const</code>, or <code>var</code>:</p>
+            <pre><code>let name = "John";
+const age = 25;
+var isStudent = true;</code></pre>
+        </section>
+
+        <section class="functions">
+            <h3>Functions</h3>
+            <p>Functions let you group code into reusable blocks:</p>
+            <pre><code>function greet() {
+    console.log("Hello from a function!");
+}
+
+greet();</code></pre>
+        </section>
+
+        <section class="try-it">
+            <h3>Try It Yourself</h3>
+            <p>Type your JavaScript below and click "Run Code" to see the output.</p>
+            <textarea id="jsEditor" rows="10" cols="50" placeholder="Type your JavaScript code here..."></textarea>
+            <button onclick="runJsCode()">Run Code</button>
+            <h4>Output:</h4>
+            <pre id="jsOutput" class="output-box"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn to Code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function runJsCode() {
+            const code = document.getElementById("jsEditor").value;
+            const output = document.getElementById("jsOutput");
+            try {
+                const result = eval(code);
+                output.textContent = result === undefined ? 'Code ran successfully.' : result;
+            } catch (err) {
+                output.textContent = "Error: " + err.message;
+            }
+        }
+    </script>
+</body>
+</html>

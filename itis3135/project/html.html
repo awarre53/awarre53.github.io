@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+    <link rel="stylesheet" href="../styles/projectstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Learn to Code</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">Learn HTML</a></li>
+                <li><a href="css.html">Learn CSS</a></li>
+                <li><a href="javascript.html">Learn JavaScript</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>HTML Basics</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating web pages. Below are some basic elements used in HTML.</p>
+
+        <h3>Basic HTML Structure</h3>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        
+        <section class="tags-overview">
+            <h3>Understanding HTML Tags</h3>
+            <p>HTML tags are the building blocks of web pages. Most tags have an <strong>opening tag</strong> and a <strong>closing tag</strong>. For example:</p>
+            <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+            <p>Some tags are <strong>void tags</strong>, which means they don’t have a closing tag. Examples include:</p>
+            <ul>
+                <li><code>&lt;br&gt;</code> - Line break</li>
+                <li><code>&lt;img&gt;</code> - Image</li>
+                <li><code>&lt;hr&gt;</code> - Horizontal rule</li>
+            </ul>
+        </section>
+
+        <h3>Common Tags</h3>
+        <ul>
+            <li>Headings: <code>&lt;h1&gt; to &lt;h6&gt;</code></li>
+            <li>Paragraphs: <code>&lt;p&gt;</code></li>
+            <li>Anchor (Link): <code>&lt;a href="url"&gt;</code></li>
+            <li>Image: <code>&lt;img src="image.jpg" alt="Description"&gt;</code></li>
+            <li>Lists: <code>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</code></li>
+            <li>Containers: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></li>
+        </ul>
+
+        <section class="html-section">
+            <h3>Classes</h3>
+            <p>Use the <code>class</code> attribute to assign a class name to an HTML element for styling or scripting purposes:</p>
+            <pre><code>&lt;div class="highlight"&gt;This is a styled box.&lt;/div&gt;</code></pre>
+        </section>
+
+        <h3>Try it Yourself</h3>
+        <textarea id="htmlEditor" rows="10" cols="60">
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+        </textarea>
+        <br>
+        <button onclick="runHtmlCode()">Run Code</button>
+        <iframe id="htmlOutput" style="width: 100%; height: 150px; border: 1px solid #ccc;"></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn to Code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function runHtmlCode() {
+            const editor = document.getElementById("htmlEditor").value;
+            const output = document.getElementById("htmlOutput");
+            output.srcdoc = editor;
+        }
+    </script>
+</body>
+</html>

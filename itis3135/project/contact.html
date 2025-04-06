@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/projectstyles.css">
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Contact Us</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">Learn HTML</a></li>
+                <li><a href="css.html">Learn CSS</a></li>
+                <li><a href="javascript.html">Learn JavaScript</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="contact-form">
+            <h2>We'd love to hear from you!</h2>
+            <p>Have a question or feedback? Use the form below to reach out.</p>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" required></textarea><br>
+
+                <button type="submit">Submit</button>
+            </form>
+            <p id="confirmationMessage" style="display:none; color: green; margin-top: 1em;">Thank you for reaching out! We'll get back to you soon.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn to Code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("confirmationMessage").style.display = "block";
+            document.getElementById("contactForm").reset();
+        });
+    </script>
+</body>
+</html>

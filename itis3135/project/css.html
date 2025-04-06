@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <link rel="stylesheet" href="../styles/projectstyles.css">
+</head>
+<body>
+    <header>
+        <h1 class="page-title">Learn CSS</h1>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">Learn HTML</a></li>
+                <li><a href="css.html" class="active">Learn CSS</a></li>
+                <li><a href="javascript.html">Learn JavaScript</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="introduction">
+            <h2>Introduction to CSS</h2>
+            <p>CSS (Cascading Style Sheets) is used to control the appearance and layout of web pages. It allows you to apply styles like colors, fonts, spacing, and layout to HTML elements.</p>
+        </section>
+
+        <section class="css-syntax">
+            <h3>Basic CSS Syntax</h3>
+            <p>A CSS rule consists of a selector and a declaration block:</p>
+            <pre><code>selector {
+    property: value;
+}</code></pre>
+            <p>Example:</p>
+            <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}</code></pre>
+        </section>
+
+        <section class="selectors">
+            <h3>Common CSS Selectors</h3>
+            <p>CSS provides multiple selectors to target different HTML elements efficiently:</p>
+            <ul>
+                <li>
+                    <strong>Element Selector:</strong> Targets HTML tags (e.g., <code>p</code>, <code>h1</code>)
+                    <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}</code></pre>
+                </li>
+                <li>
+                    <strong>Class Selector:</strong> Targets elements with a specific class (e.g., <code>.highlight</code>)
+                    <pre><code>.highlight {
+    background-color: yellow;
+}</code></pre>
+                </li>
+                <li>
+                    <strong>ID Selector:</strong> Targets an element with a specific ID (e.g., <code>#main-header</code>)
+                    <pre><code>#main-header {
+    text-align: center;
+}</code></pre>
+                </li>
+                <li>
+                    <strong>Multiple Selectors:</strong> Targets multiple elements or combines selectors for precise styling (e.g., <code>h1, h2, .intro</code> or <code>.container .item</code>)
+                    <pre><code>h1, h2, .intro {
+    font-weight: bold;
+}
+.container .item {
+    margin: 10px;
+}</code></pre>
+                </li>
+                <li>
+                    <strong>Universal Selector:</strong> Targets all HTML elements on the page (e.g., <code>*</code>)
+                    <pre><code>* {
+    margin: 0;
+    padding: 0;
+}</code></pre>
+                </li>
+            </ul>
+        </section>
+
+        <section class="common-properties">
+            <h3>Common CSS Properties</h3>
+            <ul>
+                <li><code>color</code>: Sets the text color</li>
+                <li><code>background-color</code>: Sets the background color</li>
+                <li><code>font-size</code>: Sets the size of the font</li>
+                <li><code>font-family</code>: Sets the typeface of the text</li>
+                <li><code>margin</code>: Sets the space outside the element</li>
+                <li><code>padding</code>: Sets the space inside the element</li>
+                <li><code>border</code>: Sets the border style, width, and color</li>
+                <li><code>width</code> / <code>height</code>: Sets the dimensions of an element</li>
+                <li><code>display</code>: Defines how an element is displayed (e.g., block, inline, flex)</li>
+            </ul>
+        </section>
+
+        <section class="try-it">
+            <h3>Try It Yourself</h3>
+            <p>Type your CSS below to style the website! Any changes made will update the website dynamically.
+                Remember the proper sytanx, calling the selector, then your properties.
+            </p>
+            <textarea id="cssEditor" rows="10" cols="50" placeholder="Type your CSS here..."></textarea>
+            <button onclick="runCssCode()">Apply CSS</button>
+            <p>Refresh page to revert changes.
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learn to Code. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function runCssCode() {
+            const cssCode = document.getElementById("cssEditor").value;
+            const style = document.createElement("style");
+            style.innerHTML = cssCode;
+            document.head.appendChild(style);
+        }
+    </script>
+</body>
+</html>
