@@ -1,16 +1,16 @@
 const slides = [
     { src: "images/slideshow/surfing.jpg", caption: "A - Austin" },
-    { src: "images/slideshow/uniform.jpg", caption: "U - Uniform" },
-    { src: "images/slideshow/shirt.jpg", caption: "S - Shirt" },
-    { src: "images/slideshow/tennis_ball.jpg", caption: "T - Tennis Ball" },
-    { src: "images/slideshow/imac.jpg", caption: "I - iMac" },
-    { src: "images/slideshow/new_balance.jpg", caption: "N - New Balance" },
-    { src: "images/slideshow/water_bottle.jpg", caption: "W - Water Bottle" },
-    { src: "images/slideshow/airpods.jpg", caption: "A - AirPods" },
-    { src: "images/slideshow/remote.jpg", caption: "R - Remote" },
-    { src: "images/slideshow/ruler.jpg", caption: "R - Ruler" },
-    { src: "images/slideshow/electric_toothbrush.jpg", caption: "E - Electric Toothbrush" },
-    { src: "images/slideshow/notebook.jpg", caption: "N - Notebook" }];
+    { src: "images/slideshow/uniform.jpeg", caption: "U - Uniform" },
+    { src: "images/slideshow/shirt.jpeg", caption: "S - Shirt" },
+    { src: "images/slideshow/tennis_ball.jpeg", caption: "T - Tennis Ball" },
+    { src: "images/slideshow/imac.jpeg", caption: "I - iMac" },
+    { src: "images/slideshow/new_balance.jpeg", caption: "N - New Balance" },
+    { src: "images/slideshow/water_bottle.jpeg", caption: "W - Water Bottle" },
+    { src: "images/slideshow/airpods.jpeg", caption: "A - AirPods" },
+    { src: "images/slideshow/remote.jpeg", caption: "R - Remote" },
+    { src: "images/slideshow/ruler.jpeg", caption: "R - Ruler" },
+    { src: "images/slideshow/electric_toothbrush.jpeg", caption: "E - Electric Toothbrush" },
+    { src: "images/slideshow/notebook.jpeg", caption: "N - Notebook" }];
 
 let currentIndex = 0;
 const imgElement = document.getElementById("image");
