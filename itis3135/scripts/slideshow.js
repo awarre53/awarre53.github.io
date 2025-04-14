@@ -1,5 +1,5 @@
 const slides = [
-    { src: "images/surfing.jpg", caption: "A - Austin" },
+    { src: "images/slideshow/surfing.jpg", caption: "A - Austin" },
     { src: "images/slideshow/uniform.jpg", caption: "U - Uniform" },
     { src: "images/slideshow/shirt.jpg", caption: "S - Shirt" },
     { src: "images/slideshow/tennis_ball.jpg", caption: "T - Tennis Ball" },
