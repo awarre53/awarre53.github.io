@@ -132,5 +132,50 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
+/* Slideshow CSS rules: */
+.gallery {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#slideshow {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#slideshow figure {
+    margin: 0;
+}
+figcaption {
+    color: white;
+}
+#slideshow img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #4287f5;
+}
+#slideshow figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttons button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
 
  
