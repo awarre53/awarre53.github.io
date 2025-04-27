@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="page-title">Learn JavaScript</h1>
+        <h1 class="page-title">Learn to Code: Websites</h1>
         <nav>
             <ul class="nav-bar">
                 <li><a href="index.html">Home</a></li>
@@ -54,7 +54,7 @@ greet();</code></pre>
 
         <section class="try-it">
             <h3>Try It Yourself</h3>
-            <p>Type your JavaScript below and click "Run Code" to see the output.</p>
+            <p>Using the alert method, write JavaScript to have text pop up on the screen. Type your JavaScript below and click "Run Code" to see the output.</p>
             <textarea id="jsEditor" rows="10" cols="50" placeholder="Type your JavaScript code here..."></textarea>
             <button onclick="runJsCode()">Run Code</button>
             <h4>Output:</h4>
@@ -65,18 +65,6 @@ greet();</code></pre>
     <footer>
         <p>&copy; 2025 Learn to Code. All rights reserved.</p>
     </footer>
-
-    <script>
-        function runJsCode() {
-            const code = document.getElementById("jsEditor").value;
-            const output = document.getElementById("jsOutput");
-            try {
-                const result = eval(code);
-                output.textContent = result === undefined ? 'Code ran successfully.' : result;
-            } catch (err) {
-                output.textContent = "Error: " + err.message;
-            }
-        }
-    </script>
+    <script src="scripts/project.js"></script>
 </body>
 </html>

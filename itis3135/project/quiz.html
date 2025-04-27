@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="page-title">Test Your Knowledge</h1>
+        <h1 class="page-title">Learn to Code: Websites</h1>
         <nav>
             <ul class="nav-bar">
                 <li><a href="index.html">Home</a></li>
@@ -43,6 +43,23 @@
                     <label><input type="radio" name="q3" value="b"> variable name;</label><br>
                     <label><input type="radio" name="q3" value="c"> v name;</label>
                 </div>
+                <div class="quiz-question">
+                    <p>4. What tag is used to create a hyperlink in HTML?</p>
+                    <label><input type="radio" name="q4" value="a"> &lt;link&gt;</label><br>
+                    <label><input type="radio" name="q4" value="b"> &lt;a&gt;</label><br>
+                    <label><input type="radio" name="q4" value="c"> &lt;href&gt;</label>
+                </div>
+                <div class="quiz-question">
+                    <p>5. In CSS, which property is used to add space inside an element's border?</p>
+                    <label><input type="radio" name="q5" value="a"> margin</label><br>
+                    <label><input type="radio" name="q5" value="b"> spacing</label><br>
+                    <label><input type="radio" name="q5" value="c"> padding</label><br>
+                <div class="quiz-question">
+                    <p>6. In JavaScript, which keyword is used to define a constant?</p>
+                    <label><input type="radio" name="q6" value="a"> var</label><br>
+                    <label><input type="radio" name="q6" value="b"> const</label><br>
+                    <label><input type="radio" name="q6" value="c"> let</label>
+                </div>
                 <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
             </form>
             <div id="quizResults" class="quiz-results"></div>
@@ -52,23 +69,6 @@
     <footer>
         <p>&copy; 2025 Learn to Code. All rights reserved.</p>
     </footer>
-
-    <script>
-        function gradeQuiz() {
-            const answers = {
-                q1: "a",
-                q2: "c",
-                q3: "a"
-            };
-            let score = 0;
-            for (let q in answers) {
-                const selected = document.querySelector(`input[name="${q}"]:checked`);
-                if (selected && selected.value === answers[q]) {
-                    score++;
-                }
-            }
-            document.getElementById("quizResults").innerText = `You scored ${score}/3!`;
-        }
-    </script>
+    <script src="scripts/project.js"></script>
 </body>
 </html>
