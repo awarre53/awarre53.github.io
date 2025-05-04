@@ -1,7 +1,7 @@
 /** Navigation Bar across all webpages zooms in when hovered over*/
 const navLinks = document.querySelectorAll('.nav-bar a');
     
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
     link.addEventListener('mouseover', () => {
         link.style.transform = 'scale(1.2)';
         link.style.transition = 'transform 0.3s ease';
@@ -54,7 +54,7 @@ function gradeQuiz() {
         q3: "a",
         q4: "b",
         q5: "c",
-        q6: "b",
+        q6: "b"
     };
     
     let score = 0;
@@ -69,12 +69,13 @@ function gradeQuiz() {
     const resultDiv = document.getElementById("quizResults");
 
     resultDiv.classList.remove("pop-animation");
-    void resultDiv.offsetWidth; // re-trigger the animation
+    // re-trigger the animation
+    void resultDiv.offsetWidth; 
     resultDiv.classList.add("pop-animation");
 
     resultDiv.innerHTML = `<h3>You scored ${score} out of 6!</h3>`;
 
-    if (score === totalQuestions) {
+    if (score === 6) {
         resultDiv.innerHTML += "<p>Perfect score! Great job! 🎉</p>";
     } else if (score >= 4) {
         resultDiv.innerHTML += "<p>Good work! Keep practicing!</p>";
